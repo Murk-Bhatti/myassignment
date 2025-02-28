@@ -3,81 +3,25 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Static Resume</title>
+    <title>Advanced Calculator</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="resume-container">
-        <!--Left Section-->
-        <div class="left-section">
-            <img src="profile.jfif" alt="Profile Picture" class="profile-picture">
-            <section id="Personal Details">
-                <h3 style="color: rgb(12, 10, 10);">Personal Details</h3>
-                <p><b>Email:</b> <a href="mailto:xyz@gmail.com">xyz@gmail.com</a></p>
-                <p><b>Cell#</b> 123456789</p>
-                <p><b>Address:</b> Karachi Sindh, Pakistan</p>
-                <p><b>LinkedIn:</b> <a href="mailto:www.linkedin.com">www.linkedin.com</a></p>
-        </section>
-            <section id="Certifications">
-                <h3 style="color: rgb(15, 15, 14);">Certifications</h3>
-                <p><b>AI Web 3.0 & Metaverse:</b> From Governor House Karachi, Sindh Pakistan(On-going)</p>
-                <P>Cisco Certified Network Associate-CCNA</P>
-            </section>
-            <section id="Skills">
-                <h3 style="color: rgb(7, 7, 6);">Skills</h3>
-                <p>Microsoft Office</p>
-                <p>Outlook</p>
-                <p>C,C++,C Programming</p>
-                <p>Python Language - Basic</p>
-                <p>Social Media</p>
-                <p>Virtual team work (MS Teams)</p>
-            </section>
-            <section id="HOBBIES AND INTERESTS">
-                <h3 style="color: rgb(7, 7, 6);">HOBBIES AND INTERESTS</h3>
-                <p>Reading</p>
-                <p>Travelling</p>
-                <p>Writting</p>
-            </section>
+    <div class="calculator-container">
+        <div class="calculator">
+            <h1>Advanced Calculator</h1>
+            <input type="number" id="firstNumber" placeholder="Enter first number" class="input-field">
+            <input type="number" id="secondNumber" placeholder="Enter second number" class="input-field">
+            <select id="operator" class="select-field">
+                <option value="Addition">Addition</option>
+                <option value="Subtraction">Subtraction</option>
+                <option value="Multiplication">Multiplication</option>
+                <option value="Division">Division</option>
+            </select>
+            <button onclick="calculate()" class="calculate-button">Calculate</button>
+            <div id="result" class="result-display">Result: 0</div>
         </div>
-        <!--Right Section-->
-        <div class="Right-section">
-            <h1>Static Interactive Resume</h1>
-            <section id="objective">
-                <h3 style="color:black">Career objective</h3>
-                <p style="text-align: justify; hyphens: auto;">I am as a driven and results-oriented professional seeking a challenging position where I can leverage my skills, experiences, and
-                    qualifications to contribute effectively towards the company's success while continuously enhancing my own professional growth.
-                </p>
-            </section>
-        <section id="Work Experience">
-                <h3 style="color:black">Work Experience</h3>
-                <p><b>Business Development Officer:</b> at PIQC Institute of Quality</p>
-                <p>(September 2024 - Present)</p>
-                <p><b>Customer Service Executive:</b> at Ioconic Group</p>
-                <p>(September 2022 - August 2023)</p>
-                <p><b>Ass. Data Processing Engineer:</b> at Gfk Etilize</p>
-                <p>(November 2018 - January 2022)</p>
-            </section>
-            <section id="Education">
-                <h3 style="color: rgb(19, 19, 17);">Education</h3>
-                <p><b>Masters in Telecommunication Engineering:</b> from NED University of Engineering & Technology</p>
-                <p><b>Bachelors in Telecommunication Engineering:</b> from Mehran University of Engineering & Technology</p>
-            </section>
-            <section id="CONFERENCES AND SEMINARS">
-            <h3 style="color: rgb(19, 19, 17);">CONFERENCES AND SEMINARS</h3>
-            <p><b>Intelligent UAV's:</b> Arranged by Erasmus</p>
-            <p><b>Ardunio Seminar:</b> Arranged by IEEE</p>
-            <p><b>Latex:</b> Arranged by the Telecommunication Department</p>
-            <p><b>Wireless & Next Generation Networks Communications:</b> Arranged by the Telecommunication Department</p>
-            <p><b>Cyber Security:</b> Arranged by IEEE</p>
-        </section>
-<section id="For Reference">
-    <h3 style="color: rgb(19, 19, 17);">For Reference</h3>
-
-</section>
-<!--Button to toggle Skill section-->
-<button id="toggle-skills"><b>Show/Hide Skills</b></button>
-</div>
-</div>
-<script src="script.js"></script>
+    </div>
+    <script src="script.js"></script>
 </body>
 </html>
